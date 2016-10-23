@@ -1,0 +1,89 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft Yahei", "微软雅黑", "Pingfang SC", "苹方-简", serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* animation */
+@keyframes blur-out {
+    from {
+        filter: blur(10px);
+    }
+    to {
+        filter: blur(0.2px);
+    }
+}
+/* style */
+html, body {
+    height: 100%;
+}
+body {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff0e1;
+}
+body > .wrapper {
+    min-height: 100%;
+    position: relative;
+}
+body > .wrapper > .bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    background: url(ainou.jpg) no-repeat bottom right;
+    background-size: 100%;
+}
+section.top {
+    width: 450px;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+    position: absolute;
+    background: rgba(255, 240, 225, 0.6);
+    opacity: 0.6;
+    transition: all 1s;
+    cursor: default;
+    animation: blur-out 1s;
+}
+section.top:hover {
+    opacity: 0.8;
+    filter: blur(0);
+}
+section.top h1 {
+    font-size: xx-large;
+}
+section.top h2 {
+    font-size: larger;
+}
+section.top article {
+    margin-top: 20px;
+}
+ul.jumplist {
+    margin-top: 10px;
+}
+ul.jumplist a {
+    color: #716a00;
+}
+ul.jumplist a:hover {
+    color: #007168;
+    text-shadow: rgba(0, 113, 104, 0.3) 0px 0px 5px;
+}
+ul.jumplist a:before {
+    content: '»';
+    display: inline-block;
+    padding-right: 6px;
+}
