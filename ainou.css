@@ -69,20 +69,20 @@ section.top h1 {
 section.top h2 {
     font-size: larger;
 }
-section.top article {
+section.top .box {
     margin-top: 20px;
 }
-ul.jumplist {
+ul.links {
     margin-top: 10px;
 }
-ul.jumplist a {
+ul.links a {
     color: #716a00;
 }
-ul.jumplist a:hover {
-    color: #007168;
-    text-shadow: rgba(0, 113, 104, 0.3) 0px 0px 5px;
+ul.links a:hover {
+    color: #c93939;
+    text-shadow: rgba(201, 57, 57, 0.3) 0px 0px 5px;
 }
-ul.jumplist a:before {
+ul.links a:before {
     content: '»';
     display: inline-block;
     padding-right: 6px;
